@@ -1,0 +1,10 @@
+#!/bin/bash
+
+DATA=`cat data/answers.txt`
+
+cat << EOF > cmd/secretword/data.go
+// GENERATED FROM github.com/crit/secretword/data/answers.txt
+package main
+
+const answerData = \`${DATA}\`
+EOF
