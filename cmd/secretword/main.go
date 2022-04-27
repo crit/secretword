@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/crit/secretword/pkg/secretword"
+	"github.com/crit/secretword"
 	"github.com/fatih/color"
 	"github.com/manifoldco/promptui"
 )

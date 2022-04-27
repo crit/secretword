@@ -4,25 +4,25 @@
 
 ## Build
 
-`cd cmd/wordle && go build .`
+`cd cmd/secretword && go build .`
 
 ## Installation
 
-`cd cmd/wordle && go install .`
+`cd cmd/secretword && go install .`
 
 ## Dependencies
 
 - [github.com/fatih/color]()
 - [github.com/manifoldco/promptui]()
 
-# Wordle Solver
+# Secret Word Solver
 
 In development
 
-# Wordle Library
+# Secret Word Library
 
 
-Installation: `go get -u github.com/crit/wordle-go/pkg/wordle`
+Installation: `go get -u github.com/crit/secretword/pkg/wordle`
 
 Usage:
 
@@ -32,12 +32,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/crit/wordle-go/pkg/wordle"
+	"github.com/crit/secretword/pkg/secretword"
 )
 
 func main() {
 	// compare answer against a guess to get a result set for all characters.
-	result := wordle.Compare("peach", "party") // wordle.Result{Correct, Elsewhere, Incorrect, Incorrect, Incorrect}
+	result := secret.Compare("peach", "party") // wordle.Result{Correct, Elsewhere, Incorrect, Incorrect, Incorrect}
 	fmt.Println(result)
 }
 ```
