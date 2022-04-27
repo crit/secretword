@@ -22,7 +22,7 @@ In development
 # Secret Word Library
 
 
-Installation: `go get -u github.com/crit/secretword/pkg/wordle`
+Installation: `go get -u github.com/crit/secretword`
 
 Usage:
 
@@ -32,12 +32,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/crit/secretword/pkg/secretword"
+	"github.com/crit/secretword"
 )
 
 func main() {
 	// compare answer against a guess to get a result set for all characters.
-	result := secret.Compare("peach", "party") // wordle.Result{Correct, Elsewhere, Incorrect, Incorrect, Incorrect}
+	result := secretword.Compare("peach", "party") // wordle.Result{Correct, Elsewhere, Incorrect, Incorrect, Incorrect}
 	fmt.Println(result)
 }
 ```
